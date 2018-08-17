@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: BB+pHMgZHBbYrQEfTW4HJKn0hzt7E7+9t2vE4K84np+xpTuNOQGz8WUKOMvX+tN7m0yMGa0h+Qlebow1feOekVREtQP/bAs1QLpZy0s3YU6EtWyTreAUHybs7YkZpdkl1oPL2YlVvFUMb56b42PWOx7p26VFCHtV5pJNP/xr4O7aWtlOvpl5Xq6ua1c8zUqBTsB/ses6UbuSqAw6NiqlQ06EKVU8/351+BuR0Nt3Zq2v8/2e5BQL5v0ltPWHPXzT6JNXY8PGorMSqY+wL8mfUikGLrCTKOJNuQGiD074NPcpJ3cHS98+pmBO98OHWgzltWTXbE8bX4IKjeSiEfaGAIGy/YLLhuKKqPfx/d9A0e3+tRsH3CrkvZBFmQ9wJKbmLve0FvMFf9Qeb5iXmC9Z1O5BkAEekGAY813n8vT4Fawb//M86Xw/O2HNtuKBpRrYINKquAC1n9hbArMMaUfl17Lc00vscB98vfQHLmtL/1acy8ONYXec3x0EU/NUvCtFBzoL9XCbYc5MU+h+AQfsCX9s6SmF3UmF9u+d8ZRVOnZilmCxAx102KBBVInYUFWlYP01gEtKX5+zF5v7yjKEODzicSSXih/Mj8i0lvo8jhqtEzFnrzr/owi/HahdxZWZ0Ax0heupwsmqrz8+Syuwi/PF73xzEVC2bB5QXLzZcf4=
+  app: Travis
+  on:
+    repo: nidhin28/Travis
